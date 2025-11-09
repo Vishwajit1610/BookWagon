@@ -45,24 +45,30 @@
 
     <!-- Main Content Area -->
     <main class="container py-5">
-        <div class="text-center">
-            <h1>Contact Us</h1>
-            <p class="lead">We'd love to hear from you. Reach out with any questions or feedback.</p>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-lg-8">
-                <form>
-                    <div class="mb-3"><label for="contactName" class="form-label">Your Name</label><input type="text"
-                            class="form-control" id="contactName" placeholder="Enter your name"></div>
-                    <div class="mb-3"><label for="contactEmail" class="form-label">Your Email</label><input type="email"
-                            class="form-control" id="contactEmail" placeholder="Enter your email"></div>
-                    <div class="mb-3"><label for="contactMessage" class="form-label">Your Message</label><textarea
-                            class="form-control" id="contactMessage" rows="5"
-                            placeholder="Enter your message"></textarea></div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+        <form id="contactForm" novalidate>
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required
+                    minlength="2">
+                <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
             </div>
-        </div>
+
+            <div class="mb-3">
+                <label for="contactEmail" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="contactMessage" class="form-label">Your Message</label>
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Enter your message" required
+                    minlength="10"></textarea>
+                <div class="invalid-feedback">Message must be at least 10 characters.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
     </main>
 
     <!-- Client Footer -->
