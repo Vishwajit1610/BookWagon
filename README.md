@@ -38,6 +38,7 @@ Live Site (GitHub Pages): https://vishwajit1610.github.io/BookWagon/
 ---
 ### 📂 Project Structure
 
+```
 BookWagon Project/
 │
 ├── index.html
@@ -77,6 +78,7 @@ BookWagon Project/
 │   └── (images, icons, covers)
 │
 └── README.md
+```
 
 ---
 ### 🧠 Learning Outcomes
