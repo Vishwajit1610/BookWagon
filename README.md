@@ -1,59 +1,99 @@
-# 📚 BookWagon
+## 📚 BookWagon — Online Bookstore Website
 
-BookWagon is a **static online bookstore website** built as part of the **Web Technology (WT) subject — Semester 3, B.Tech Computer Engineering**.  
-This project demonstrates the use of **HTML, CSS, Bootstrap, and minimal JavaScript** to create a responsive, interactive web application.
-
----
-
-## ✨ Features
-
-- Responsive design using **Bootstrap 5** grid system.
-- Homepage with:
-  - Navbar with brand + search + cart badge.
-  - Hero section with search input and categories.
-  - Featured books section (Bootstrap cards).
-  - Footer with copyright.
-- **Cart functionality (JavaScript)**:
-  - Add to cart button (updates cart count).
-  - Cart modal (lists items, shows total).
-  - Clear cart and demo checkout buttons.
-- Mobile-friendly UI with **media queries** and Bootstrap responsiveness.
+BookWagon is a responsive static bookstore website developed as part of the Web Technology (WT) subject — Semester 3, B.Tech Computer Engineering.
+It demonstrates modern front-end web design principles using HTML5, CSS3, Bootstrap 5, and JavaScript (ES6) for interactivity and validation.
 
 ---
+### 🌐 Live Demo & Repository
 
-## 🛠️ Tech Stack
+GitHub Repository: https://github.com/vishwajit1610/BookWagon
 
-- **HTML5** → Structure and semantic layout.
-- **CSS3** → Custom styling, selectors, box model, responsive tweaks.
-- **Bootstrap 5** → Grid system, navbar, cards, modal, buttons, forms.
-- **JavaScript (ES6)** → Minimal functionality (Add to Cart, cart modal).
-- **GitHub Pages** → Hosting and version control.
+Live Site (GitHub Pages): https://vishwajit1610.github.io/BookWagon/
 
 ---
+### ✨ Features
 
-## 📂 Project Structure
+**Responsive Design:** Fully responsive layout built using the Bootstrap grid system.
 
-project-root/
-├── index.html (or loginPage.html - The main login portal)
+**Client-Side Pages:** Homepage, catalog, detailed book pages, about, and contact form.
+
+**Admin Panel:** Dashboard for managing books, users, and orders with form validation.
+
+**Interactive Cart:** Add-to-cart and notification toasts implemented using JavaScript.
+
+**Form Validation:** Contact form and Add/Edit Book form validated using JavaScript and Bootstrap validation classes.
+
+**Clean UI:** Elegant typography, iconography, and consistent layout structure.
+
+---
+### 🛠️ Tech Stack
+
+| Layer                     | Technologies                               |
+| ------------------------- | ------------------------------------------ |
+| Structure                 | HTML5 (Semantic Layouts)                   |
+| Styling                   | CSS3, Bootstrap 5                          |
+| Interactivity             | JavaScript (ES6)                           |
+| Hosting & Version Control | GitHub & GitHub Pages                      |
+
+---
+### 📂 Project Structure
+
+BookWagon Project/
+│
+├── index.html
+│
 ├── Client Pages/
-│ ├── homepage.html
-│ ├── catalog.html
-│ ├── about.html
-│ ├── contact.html
-│ └── book-detail.html
+│   ├── homepage.html
+│   ├── catalog.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── book-detail-1984.html
+│   ├── book-detail-atomic.html
+│   ├── book-detail-deepwork.html
+│   ├── book-detail-dune.html
+│   ├── book-detail-klara.html
+│   ├── book-detail-lincoln.html
+│   ├── book-detail-meditations.html
+│   ├── book-detail-naval.html
+│   ├── book-detail-odyssey.html
+│   ├── book-detail-projecthailmary.html
+│   ├── book-detail-quantumthief.html
+│   └── book-detail-sapiens.html
+│
 ├── Admin Pages/
-│ ├── admin_dashboard.html
-│ ├── admin_books.html
-│ ├── admin_orders.html
-│ ├── admin_users.html
-│ └── admin_add_edit_book.html
-├── CSS/
-│ └── style.css (Custom styles and overrides)
-└── JS/
-└── script.js (Global scripts for cart and notifications)
+│   ├── admin_dashboard.html
+│   ├── admin_books.html
+│   ├── admin_orders.html
+│   ├── admin_users.html
+│   └── admin_add_edit_book.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── media/
+│   └── (images, icons, covers)
+│
+└── README.md
 
-👨‍💻 Author
+---
+### 🧠 Learning Outcomes
 
-Vishwajit Mohol -> 92400120438
-Semester 3, Computer Engineering — MU
-Project for Web Technology (WT 01CE1306)
+- Practical understanding of the **Bootstrap grid system** and responsive design.
+    
+- Implemented **form validation using HTML5 + JavaScript APIs**.
+    
+- Applied **modular page structure** for maintainability.
+    
+- Gained exposure to **UI/UX design principles** and **front-end best practices**.
+
+---
+### 👨‍💻 Author
+
+- **Vishwajit Mohol** — Roll No. **92400120438**  
+- Semester 3, **Computer Science and Engineering (CSE)**
+- Project for **Web Technology (WT 01CE1306)**
+
+---
