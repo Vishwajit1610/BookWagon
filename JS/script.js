@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", () => {
             showToast("Form submitted successfully.");
 
             // If you want to actually clear the form after success, uncomment:
-            // form.reset();
-            // form.classList.remove('was-validated');
+            form.reset();
+            form.classList.remove("was-validated");
           }
         },
         false
@@ -91,4 +91,56 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   enableFormValidation();
+
+  // ---------- LOGIN HANDLER (moved into this global script) ----------
+  (function enableLogin() {
+    const loginForm = document.getElementById("loginForm");
+    if (!loginForm) return;
+
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+    const clientRadio = document.getElementById("clientRadio");
+    const adminRadio = document.getElementById("adminRadio");
+
+    // Preselect role if ?role=admin in URL
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("role") === "admin" && adminRadio) {
+      adminRadio.checked = true;
+    }
+
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const roleEl = document.querySelector('input[name="userType"]:checked');
+      const role = roleEl ? roleEl.value : "client";
+      const username = usernameInput ? usernameInput.value.trim() : "";
+      const password = passwordInput ? passwordInput.value.trim() : "";
+
+      // Demo credentials
+      const creds = {
+        client: { username: "client", password: "client123" },
+        admin: { username: "admin", password: "admin123" },
+      };
+
+      if (
+        creds[role] &&
+        username === creds[role].username &&
+        password === creds[role].password
+      ) {
+        // success
+        if (role === "client") {
+          window.location.href = "./Client Pages/homepage.html";
+        } else {
+          window.location.href = "./Admin Pages/admin_dashboard.html";
+        }
+      } else {
+        // invalid - visual feedback + toast
+        const card = document.querySelector(".login-card");
+        if (card) {
+          card.classList.add("border-danger");
+          setTimeout(() => card.classList.remove("border-danger"), 1500);
+        }
+        showToast(`Incorrect username or password for ${role}.`, "error");
+      }
+    });
+  })();
 });
