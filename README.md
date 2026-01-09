@@ -12,11 +12,11 @@ GitHub Repository: https://github.com/vishwajit1610/BookWagon
 
 Demo Credentials: 
 Client Side:- 
-Username - client
-Password - client123
-Adimin Side:-
-Username - admin   
-Password - admin123
+Username - client 
+Password - client123 
+Adimin Side:- 
+Username - admin    
+Password - admin123 
 
 ---
 ### ✨ Features
