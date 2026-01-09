@@ -8,7 +8,15 @@ It demonstrates modern front-end web design principles using HTML5, CSS3, Bootst
 
 GitHub Repository: https://github.com/vishwajit1610/BookWagon
 
-Live Site (GitHub Pages): https://vishwajit1610.github.io/BookWagon/
+**Live Site (GitHub Pages): https://vishwajit1610.github.io/BookWagon/**
+
+Demo Credentials: 
+Client Side:- 
+Username - client
+Password - client123
+Adimin Side:-
+Username - admin   
+Password - admin123
 
 ---
 ### ✨ Features
